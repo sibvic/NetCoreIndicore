@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Indicore">
+      <UniqueIdentifier>{ba58541e-5fac-40dc-9f71-c00fbbd67a1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Indicore\basicImpl">
+      <UniqueIdentifier>{13b8f2cf-f84a-4aa0-9e59-581999a968a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Indicore\core">
+      <UniqueIdentifier>{3b6fde96-7c10-48e0-8ddf-89795b5433b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Indicore\diagnostic">
+      <UniqueIdentifier>{bad26c8b-a3b1-4b25-9c47-a43360a40ca1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Indicore\host">
+      <UniqueIdentifier>{a9641af2-50a7-4c96-a71e-3ce8d7e3f14b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Indicore\indicator">
+      <UniqueIdentifier>{0efcdc66-997c-43b6-aa83-d31186827ec9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Indicore\interfaces">
+      <UniqueIdentifier>{a2da7f65-be04-4d72-b17b-706f47e34409}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Indicore\manager">
+      <UniqueIdentifier>{e60fbe12-1c77-4b89-b7d9-1f04a473e53f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Indicore\parameters">
+      <UniqueIdentifier>{96b5e546-81d4-4da4-a6fd-ced7de60711d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Indicore\stream">
+      <UniqueIdentifier>{edf44c0c-8489-4038-a09e-95e0dc40aff5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Indicore\utils">
+      <UniqueIdentifier>{3fdceecf-94bf-4b00-bd98-cc03c5c91cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Indicore\utils\win32">
+      <UniqueIdentifier>{099be252-7b6c-419b-9eb2-ee3204731742}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NetCoreIndicore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\config.h">
+      <Filter>Header Files\Indicore</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\indicore3.h">
+      <Filter>Header Files\Indicore</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\basicImpl\ErrorFactory.h">
+      <Filter>Header Files\Indicore\basicImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\basicImpl\FileSource.h">
+      <Filter>Header Files\Indicore\basicImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\basicImpl\StringList.h">
+      <Filter>Header Files\Indicore\basicImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\core\candleperiod.h">
+      <Filter>Header Files\Indicore\core</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\diagnostic\errordiagnostic.h">
+      <Filter>Header Files\Indicore\diagnostic</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\diagnostic\memorydiagnostic.h">
+      <Filter>Header Files\Indicore\diagnostic</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\host\basehostimpl.h">
+      <Filter>Header Files\Indicore\host</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\host\basehostimpl_obj.h">
+      <Filter>Header Files\Indicore\host</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\host\basehostimpl_vt.h">
+      <Filter>Header Files\Indicore\host</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\host\executableargs.h">
+      <Filter>Header Files\Indicore\host</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\indicator\ownerdrawnpoints.h">
+      <Filter>Header Files\Indicore\indicator</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\idomain.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\ierror.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\iexecutable.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\ifiledatalist.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\ifilesource.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\IHost.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\iinstance.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\ILanguageServices.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\ilocalizationsource.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\imacroinstance.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\imacroprofile.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\iobject.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\ioutputgroup.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\iownerdraw.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\iparameters.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\iprofile.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\istream.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\istring.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\istringlist.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\itoolinstance.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\itoolprofile.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\interfaces\itradingtable.h">
+      <Filter>Header Files\Indicore\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\manager\IndicoreManager.h">
+      <Filter>Header Files\Indicore\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\manager\LoadMetadata.h">
+      <Filter>Header Files\Indicore\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\manager\localization.h">
+      <Filter>Header Files\Indicore\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\parameters\parametersfactory.h">
+      <Filter>Header Files\Indicore\parameters</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\parameters\parametervalue.h">
+      <Filter>Header Files\Indicore\parameters</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\parameters\valuemap.h">
+      <Filter>Header Files\Indicore\parameters</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\stream\priceStreamImpl.h">
+      <Filter>Header Files\Indicore\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\stream\priceStreamImpl1.h">
+      <Filter>Header Files\Indicore\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\stream\TPriceStorage.h">
+      <Filter>Header Files\Indicore\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\utils\addRefImpl.h">
+      <Filter>Header Files\Indicore\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\utils\date.h">
+      <Filter>Header Files\Indicore\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\utils\enumNames.h">
+      <Filter>Header Files\Indicore\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\utils\fastvector.h">
+      <Filter>Header Files\Indicore\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\utils\SpellerLayerT.h">
+      <Filter>Header Files\Indicore\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\utils\StringUtil.h">
+      <Filter>Header Files\Indicore\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicore\utils\win32\Win32Dll.h">
+      <Filter>Header Files\Indicore\utils\win32</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NetCoreIndicore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
