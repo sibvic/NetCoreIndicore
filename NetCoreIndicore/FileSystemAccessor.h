@@ -16,7 +16,7 @@ namespace ProfitRobots
 			
             ///** Gets enumeration of the files. */
 			virtual IFileEnumerator^ Enumerator(bool recursive, IError^% error);
-			//virtual IFileEnumerator *enumerator(const char **mask, bool recursive, IError **pperror);
+			virtual IFileEnumerator^ Enumerator(array<System::String^>^ mask, bool recursive, IError^% error);
 			//virtual IFileEnumerator *enumerator(const char *folder, const char **mask, bool recursive, IError **pperror);
 			
             ///** Checks whether the object with the ID specified exists. */

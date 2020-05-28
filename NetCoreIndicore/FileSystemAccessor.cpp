@@ -41,3 +41,26 @@ IFileEnumerator^ FileSystemAccessor::Enumerator(bool recursive, IError^% error)
 
     return gcnew FileEnumerator(nativeEnumerator);
 }
+
+IFileEnumerator^ FileSystemAccessor::Enumerator(array<System::String^>^ mask, bool recursive, IError^% error)
+{
+    array<System::IntPtr>^ ptrs = gcnew array<System::IntPtr>(mask->Length);
+    const char** masks = new const char*[mask->Length + 1];
+    for (size_t i = 0; i < mask->Length; i++)
+    {
+        ptrs[i] = Marshal::StringToHGlobalAnsi(mask[i]);
+        masks[i] = (char*)(void*)ptrs[i];
+    }
+
+    indicore3::IError* nativeErrors = nullptr;
+    auto nativeEnumerator = _native->enumerator(masks, recursive, &nativeErrors);
+    error = Create(nativeErrors);
+
+    delete[] masks;
+    for (size_t i = 0; i < mask->Length; ++i)
+    {
+        Marshal::FreeHGlobal(ptrs[i]);
+    }
+
+    return gcnew FileEnumerator(nativeEnumerator);
+}
