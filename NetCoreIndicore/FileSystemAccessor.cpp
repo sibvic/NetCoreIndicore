@@ -23,10 +23,9 @@ bool FileSystemAccessor::Init(
 	IFileSystemMetadataProvider^ metadata, 
 	IError^% error)
 {
-	auto basePath = Marshal::StringToHGlobalAnsi(base_path);
+	NetString basePath(base_path);
 	indicore3::IError* indiError = nullptr;
-	auto result = _native->init((char*)(void*)basePath, metadata->GetNative(), &indiError);
-	Marshal::FreeHGlobal(basePath);
+	auto result = _native->init(basePath.c_str(), metadata->GetNative(), &indiError);
 
 	error = Create(indiError);
 
@@ -62,5 +61,28 @@ IFileEnumerator^ FileSystemAccessor::Enumerator(array<System::String^>^ mask, bo
         Marshal::FreeHGlobal(ptrs[i]);
     }
 
+    return gcnew FileEnumerator(nativeEnumerator);
+}
+
+IFileEnumerator^ FileSystemAccessor::Enumerator(System::String^ folder, array<System::String^>^ mask, bool recursive, IError^% error)
+{
+    array<System::IntPtr>^ ptrs = gcnew array<System::IntPtr>(mask->Length);
+    const char** masks = new const char*[mask->Length + 1];
+    for (size_t i = 0; i < mask->Length; i++)
+    {
+        ptrs[i] = Marshal::StringToHGlobalAnsi(mask[i]);
+        masks[i] = (char*)(void*)ptrs[i];
+    }
+
+    NetString folderString(folder);
+    indicore3::IError* nativeErrors = nullptr;
+    auto nativeEnumerator = _native->enumerator(folderString.c_str(), masks, recursive, &nativeErrors);
+    error = Create(nativeErrors);
+
+    delete[] masks;
+    for (size_t i = 0; i < mask->Length; ++i)
+    {
+        Marshal::FreeHGlobal(ptrs[i]);
+    }
     return gcnew FileEnumerator(nativeEnumerator);
 }
