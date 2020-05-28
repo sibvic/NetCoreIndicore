@@ -80,7 +80,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>../../IndicoreIntegrationSDK-x64/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../IndicoreIntegrationSDK-x64/include;./</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>indicore3.lib</AdditionalDependencies>
@@ -93,9 +93,11 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../IndicoreIntegrationSDK-x64/include;./</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies />
+      <AdditionalDependencies>indicore3.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../IndicoreIntegrationSDK-x64/lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -104,7 +106,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>../../IndicoreIntegrationSDK-x64/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../IndicoreIntegrationSDK-x64/include;./</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>indicore3.lib</AdditionalDependencies>
@@ -117,16 +119,17 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../IndicoreIntegrationSDK-x64/include;./</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies />
+      <AdditionalDependencies>indicore3.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../IndicoreIntegrationSDK-x64/lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Indicore\basicImpl\ErrorFactory.h" />
     <ClInclude Include="Indicore\basicImpl\FileSource.h" />
     <ClInclude Include="Indicore\basicImpl\StringList.h" />
-    <ClInclude Include="Indicore\config.h" />
     <ClInclude Include="Indicore\core\candleperiod.h" />
     <ClInclude Include="Indicore\diagnostic\errordiagnostic.h" />
     <ClInclude Include="Indicore\diagnostic\memorydiagnostic.h" />
@@ -135,9 +138,7 @@
     <ClInclude Include="Indicore\host\basehostimpl_vt.h" />
     <ClInclude Include="Indicore\host\executableargs.h" />
     <ClInclude Include="Indicore\indicator\ownerdrawnpoints.h" />
-    <ClInclude Include="Indicore\indicore3.h" />
     <ClInclude Include="Indicore\interfaces\idomain.h" />
-    <ClInclude Include="Indicore\interfaces\ierror.h" />
     <ClInclude Include="Indicore\interfaces\iexecutable.h" />
     <ClInclude Include="Indicore\interfaces\ifiledatalist.h" />
     <ClInclude Include="Indicore\interfaces\ifilesource.h" />
@@ -180,6 +181,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="Indicore\FileSource.cpp" />
     <ClCompile Include="NetCoreIndicore.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
