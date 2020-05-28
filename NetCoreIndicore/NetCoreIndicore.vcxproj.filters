@@ -49,9 +49,6 @@
     <Filter Include="Header Files\Indicore\utils\win32">
       <UniqueIdentifier>{099be252-7b6c-419b-9eb2-ee3204731742}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Indicore">
-      <UniqueIdentifier>{d28693bb-bcca-4eb9-aaf0-2afbec77de50}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NetCoreIndicore.h">
@@ -210,6 +207,9 @@
     <ClInclude Include="Error.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="FileSystemAccessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="NetCoreIndicore.cpp">
@@ -221,10 +221,10 @@
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Indicore\FileSource.cpp">
-      <Filter>Source Files\Indicore</Filter>
-    </ClCompile>
     <ClCompile Include="Error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileSystemAccessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

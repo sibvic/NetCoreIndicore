@@ -1,5 +1,7 @@
 #include "pch.h"
-#include "basicImpl/FileSource.h"
+#include "indicore/basicImpl/FileSource.h"
+#include "Error.h"
+#include "FileSystemAccessor.h"
 
 using namespace ProfitRobots::NetCoreIndicore;
 using namespace System::Runtime::InteropServices;
