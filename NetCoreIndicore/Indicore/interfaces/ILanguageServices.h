@@ -17,24 +17,6 @@
 //    ILanguageService();
 //    virtual ~ILanguageService();
 //  public:
-//    enum Language
-//    {
-//        UnknownLanguage = -1,
-//        Lua,
-//        Js,
-//        NativeWin,
-//        Python,
-//        LanguageCount
-//    };
-//
-//    enum ObjectType
-//    {
-//        UnknownType,
-//        Indicator,
-//        Strategy,
-//        Tool,
-//        Macro,
-//    };
 //
 //    virtual bool recognizeFile(IFileAccessor *accessor, const char *id, Language &language, ObjectType &type, IError **pperror) = 0;
 //    virtual ILanguage *getLanguage(Language language) = 0;

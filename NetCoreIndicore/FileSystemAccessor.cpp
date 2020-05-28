@@ -1,5 +1,5 @@
 #include "pch.h"
-#include "indicore/basicImpl/FileSource.h"
+#include "FileSystemMetadataProvider.h"
 #include "Error.h"
 #include "FileSystemAccessor.h"
 

@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Error.h" />
+    <ClInclude Include="FileSystemMetadataProvider.h" />
     <ClInclude Include="FileSystemAccessor.h" />
     <ClInclude Include="Indicore\basicImpl\ErrorFactory.h" />
     <ClInclude Include="Indicore\basicImpl\FileSource.h" />
@@ -184,6 +185,7 @@
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="Error.cpp" />
+    <ClCompile Include="FileSystemMetadataProvider.cpp" />
     <ClCompile Include="FileSystemAccessor.cpp" />
     <ClCompile Include="NetCoreIndicore.cpp" />
     <ClCompile Include="pch.cpp">
