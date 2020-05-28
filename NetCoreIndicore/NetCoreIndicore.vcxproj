@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Error.h" />
     <ClInclude Include="Indicore\basicImpl\ErrorFactory.h" />
     <ClInclude Include="Indicore\basicImpl\FileSource.h" />
     <ClInclude Include="Indicore\basicImpl\StringList.h" />
@@ -181,6 +182,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="Error.cpp" />
     <ClCompile Include="Indicore\FileSource.cpp" />
     <ClCompile Include="NetCoreIndicore.cpp" />
     <ClCompile Include="pch.cpp">

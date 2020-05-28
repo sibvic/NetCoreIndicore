@@ -207,6 +207,9 @@
     <ClInclude Include="Indicore\utils\win32\Win32Dll.h">
       <Filter>Header Files\Indicore\utils\win32</Filter>
     </ClInclude>
+    <ClInclude Include="Error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="NetCoreIndicore.cpp">
@@ -220,6 +223,9 @@
     </ClCompile>
     <ClCompile Include="Indicore\FileSource.cpp">
       <Filter>Source Files\Indicore</Filter>
+    </ClCompile>
+    <ClCompile Include="Error.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
