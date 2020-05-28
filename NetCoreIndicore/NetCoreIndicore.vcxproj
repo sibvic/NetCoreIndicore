@@ -162,7 +162,7 @@
     <ClInclude Include="Indicore\interfaces\itoolinstance.h" />
     <ClInclude Include="Indicore\interfaces\itoolprofile.h" />
     <ClInclude Include="Indicore\interfaces\itradingtable.h" />
-    <ClInclude Include="Indicore\manager\IndicoreManager.h" />
+    <ClInclude Include="IndicoreManager.h" />
     <ClInclude Include="Indicore\manager\LoadMetadata.h" />
     <ClInclude Include="Indicore\manager\localization.h" />
     <ClInclude Include="Indicore\parameters\parametersfactory.h" />
@@ -181,12 +181,15 @@
     <ClInclude Include="NetCoreIndicore.h" />
     <ClInclude Include="FileEnumerator.h" />
     <ClInclude Include="Factory.h" />
+    <ClInclude Include="Permissions.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="Error.cpp" />
+    <ClCompile Include="Permissions.cpp" />
+    <ClCompile Include="IndicoreManager.cpp" />
     <ClCompile Include="FileEnumerator.cpp" />
     <ClCompile Include="FileSystemMetadataProvider.cpp" />
     <ClCompile Include="FileSystemAccessor.cpp" />
