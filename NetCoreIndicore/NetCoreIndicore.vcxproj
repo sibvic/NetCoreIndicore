@@ -179,12 +179,15 @@
     <ClInclude Include="Indicore\utils\StringUtil.h" />
     <ClInclude Include="Indicore\utils\win32\Win32Dll.h" />
     <ClInclude Include="NetCoreIndicore.h" />
+    <ClInclude Include="FileEnumerator.h" />
+    <ClInclude Include="Factory.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="Error.cpp" />
+    <ClCompile Include="FileEnumerator.cpp" />
     <ClCompile Include="FileSystemMetadataProvider.cpp" />
     <ClCompile Include="FileSystemAccessor.cpp" />
     <ClCompile Include="NetCoreIndicore.cpp" />

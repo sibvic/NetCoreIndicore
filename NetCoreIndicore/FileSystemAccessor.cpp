@@ -1,6 +1,8 @@
 #include "pch.h"
 #include "FileSystemMetadataProvider.h"
 #include "Error.h"
+#include "Factory.h"
+#include "FileEnumerator.h"
 #include "FileSystemAccessor.h"
 
 using namespace ProfitRobots::NetCoreIndicore;
@@ -25,7 +27,17 @@ bool FileSystemAccessor::Init(
 	indicore3::IError* indiError = nullptr;
 	auto result = _native->init((char*)(void*)basePath, metadata->GetNative(), &indiError);
 	Marshal::FreeHGlobal(basePath);
-	error = gcnew Error(indiError);
+
+	error = Create(indiError);
 
 	return result;
+}
+
+IFileEnumerator^ FileSystemAccessor::Enumerator(bool recursive, IError^% error)
+{
+    indicore3::IError* nativeErrors = nullptr;
+    auto nativeEnumerator = _native->enumerator(recursive, &nativeErrors);
+    error = Create(nativeErrors);
+
+    return gcnew FileEnumerator(nativeEnumerator);
 }
